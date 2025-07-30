@@ -1,47 +1,37 @@
 {
-"$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "raycast-template",
-  "title": "raycast-template",
-  "description": "Raycast template for creating extensions",
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "template",
+  "title": "template",
+  "description": "insert description",
   "icon": "icon.png",
-  "author": "you",
+  "author": "your username here",
   "categories": [],
   "license": "MIT",
   "commands": [
     {
       "name": "example-command",
       "title": "Example Command",
-      "description": "Example command for Raycast extension",
+      "description": "Example Command Description",
       "mode": "view"
     }
   ],
-  "main": "index.js",
+  "dependencies": {
+    "@raycast/api": "^1.102.2",
+    "title-case": "^3.0.3"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "18.18.4",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
   "scripts": {
     "build": "ray build -e dist",
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "ray publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/username/raycast-template.git"
-  },
-  "keywords": [],
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/username/raycast-template/issues"
-  },
-  "homepage": "https://github.com/username/raycast-template#readme",
-  "dependencies": {
-    "@raycast/api": "^1.100.3",
-    "@raycast/eslint-config": "^2.0.4",
-    "@raycast/utils": "^2.2.0",
-    "eslint": "^9.30.1",
-    "prettier": "^3.6.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "title-case": "^4.3.2",
-    "typescript": "^5.8.3"
   }
 }
